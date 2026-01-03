@@ -15,13 +15,13 @@ override_dh_auto_configure:
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 override_dh_strip:
-	dh_strip -a --dbg-package=libgz-utils4-dbg
+	dh_strip -a --dbg-package=libgz-utils5-dbg
 
 override_dh_install:
 	dh_install
 	# remove duplicate cli files from utilsx-dev.install regexp
-	cd debian/libgz-utils4-cli-dev; find . -type f -exec rm -f ../libgz-utils4-dev/{} \;
-	find debian/libgz-utils4-dev -type d -empty -delete
+	cd debian/libgz-utils5-cli-dev; find . -type f -exec rm -f ../libgz-utils5-dev/{} \;
+	find debian/libgz-utils5-dev -type d -empty -delete
 
 override_dh_auto_test:
 ifeq ($(DEB_HOST_ARCH),armhf)
@@ -37,5 +37,5 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	dh_auto_install
-	install -d debian/tmp/usr/share/gz/gz-utils4/
-	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-utils4/
+	install -d debian/tmp/usr/share/gz/gz-utils5/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-utils5/

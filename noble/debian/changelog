@@ -1,11 +1,6 @@
-gz-utils4 (4.0.0-1~noble) noble; urgency=medium
+gz-utils5 (4.999.999-1~noble) noble; urgency=medium
 
-  * gz-utils4 4.0.0-1 release
+  * Stub to be removed after first entry
 
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Fri, 26 Sep 2025 11:21:33 -0500
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Sat, 03 Jan 2026 00:31:13 +0000
 
-gz-utils4 (4.0.0~pre1-1~noble) noble; urgency=medium
-
-  * gz-utils4 4.0.0~pre1-1 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Fri, 22 Aug 2025 10:24:55 -0500
