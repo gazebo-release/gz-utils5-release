@@ -1,6 +1,5 @@
-gz-utils5 (4.999.999-1~resolute) resolute; urgency=medium
+gz-utils5 (5.0.0~pre1-1~resolute) resolute; urgency=medium
 
-  * Stub to be removed after first entry
+  * gz-utils5 5.0.0~pre1-1 release
 
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Sat, 03 Jan 2026 00:31:13 +0000
-
+ -- Addisu Z. Taddese <addisuzt@intrinsic.ai>  Tue, 18 Aug 2026 19:49:21 +0000
