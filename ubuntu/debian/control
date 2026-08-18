@@ -8,7 +8,7 @@ Build-Depends: cmake,
                doxygen,
                libcli11-dev,
                libspdlog-dev,
-               libgz-cmake5-dev
+               libgz-cmake6-dev
 Vcs-Browser: https://github.com/gazebosim/gz-utils5-release
 Vcs-Git: https://github.com/gazebosim/gz-utils5-release
 Homepage: https://github.com/gazebosim/gz-utils
@@ -18,6 +18,9 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libgz-utils-generic
+Conflicts: libgz-utils-generic, libgz-utils1, libgz-utils2, libgz-utils3, libgz-utils4
+Replaces: libgz-utils1, libgz-utils2, libgz-utils3, libgz-utils4
 Multi-Arch: same
 Description: Gazebo Utils Library - Shared library
 
@@ -25,8 +28,11 @@ Package: libgz-utils5-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-utils5 (= ${binary:Version}),
-         libgz-cmake5-dev,
+         libgz-cmake6-dev,
          ${misc:Depends}
+Provides: libgz-utils-dev-generic
+Conflicts: libgz-utils-dev-generic, libgz-utils1-dev, libgz-utils2-dev, libgz-utils3-dev, libgz-utils4-dev
+Replaces: libgz-utils1-dev, libgz-utils2-dev, libgz-utils3-dev, libgz-utils4-dev
 Multi-Arch: same
 Description: Gazebo Utils Library - Development files
 
@@ -36,6 +42,9 @@ Section: libdevel
 Depends: libgz-utils5-dev (= ${binary:Version}),
          libcli11-dev,
          ${misc:Depends}
+Provides: libgz-utils-cli-dev-generic
+Conflicts: libgz-utils-cli-dev-generic, libgz-utils1-cli-dev, libgz-utils2-cli-dev, libgz-utils3-cli-dev, libgz-utils4-cli-dev
+Replaces: libgz-utils1-cli-dev, libgz-utils2-cli-dev, libgz-utils3-cli-dev, libgz-utils4-cli-dev
 Multi-Arch: same
 Description: Gazebo Utils Library - CLI Development files
 
@@ -46,6 +55,9 @@ Depends: libgz-utils5-dev (= ${binary:Version}),
          libgz-utils5-log (= ${binary:Version}),
          libspdlog-dev,
          ${misc:Depends}
+Provides: libgz-utils-log-dev-generic
+Conflicts: libgz-utils-log-dev-generic, libgz-utils1-log-dev, libgz-utils2-log-dev, libgz-utils3-log-dev, libgz-utils4-log-dev
+Replaces: libgz-utils1-log-dev, libgz-utils2-log-dev, libgz-utils3-log-dev, libgz-utils4-log-dev
 Multi-Arch: same
 Description: Gazebo Utils Library - Log Development files
 
@@ -54,6 +66,9 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libgz-utils-log-generic
+Conflicts: libgz-utils-log-generic, libgz-utils1-log, libgz-utils2-log, libgz-utils3-log, libgz-utils4-log
+Replaces: libgz-utils1-log, libgz-utils2-log, libgz-utils3-log, libgz-utils4-log
 Multi-Arch: same
 Description: Gazebo Utils Library - Log shared library
 
