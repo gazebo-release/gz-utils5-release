@@ -1,3 +1,9 @@
+gz-utils5 (5.0.0~pre2-1~noble) noble; urgency=medium
+
+  * gz-utils5 5.0.0~pre2-1 release
+
+ -- Addisu Z. Taddese <addisuzt@intrinsic.ai>  Wed, 07 Oct 2026 01:16:26 +0000
+
 gz-utils5 (5.0.0~pre1-1~noble) noble; urgency=medium
 
   * gz-utils5 5.0.0~pre1-1 release
